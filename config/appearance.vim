@@ -9,3 +9,4 @@ set hlsearch
 set number
 set relativenumber
 set hidden
+set list
