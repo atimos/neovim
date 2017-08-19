@@ -28,23 +28,25 @@ noremap <C-H> <C-W>h
 inoremap jj <Esc>
 inoremap <esc> <NOP>
 
-cmap w!! w !sudo tee > /dev/null %
-
-nnoremap <leader>i :IndentLinesToggle<CR>
-
-nnoremap <leader>h :GundoToggle<CR>
 
 nnoremap <leader>b :Denite buffer -buffer-name=buffer -mode=normal -vertical-preview<CR>
 
 nnoremap <leader>f :Denite file -buffer-name=file -mode=normal -vertical-preview<CR>
 nnoremap <leader>fr :Denite file_rec -buffer-name=file_rec -mode=insert -vertical-preview<CR>
+nnoremap <leader>fg :Denite grep -buffer-name=file -mode=normal -vertical-preview<CR>
 
 nnoremap <leader>l :Denite line -buffer-name=line -mode=insert -vertical-preview<CR>
 
 nnoremap <leader>y :Denite neoyank -buffer-name=yankhistory -mode=normal<CR>
 nnoremap <leader>r :Denite register -buffer-name=register -mode=normal<CR>
 nnoremap <leader>c :Denite command -buffer-name=command -mode=insert<CR>
-nnoremap <leader>ch :Denite command_history -buffer-name=command_history -mode=insert<CR>
+nnoremap <leader>ch :Denite command_history -buffer-name=command_history -mode=normal<CR>
 
 nnoremap <leader>j :Denite junkfile -buffer-name=junkfile -mode=normal<CR>
 nnoremap <leader>jn :Denite junkfile:new -buffer-name=junkfile -mode=normal<CR>
+
+
+nnoremap <leader>i :IndentLinesToggle<CR>
+
+
+nnoremap <leader>h :GundoToggle<CR>
