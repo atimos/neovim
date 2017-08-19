@@ -11,6 +11,7 @@ if dein#load_state('~/.local/share/dein')
 
   call dein#add('tpope/vim-fugitive')
   call dein#add('tpope/vim-eunuch')
+  call dein#add('tpope/vim-speeddating')
 
   call dein#add('chriskempson/vim-tomorrow-theme')
   call dein#add('scrooloose/syntastic')
