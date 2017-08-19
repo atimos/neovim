@@ -32,12 +32,12 @@ cmap w!! w !sudo tee > /dev/null %
 
 nnoremap <leader>h :GundoToggle<CR>
 
-nnoremap <leader>b :Denite buffer -buffer-name=buffer -mode=normal -auto-preview -vertical-preview<CR>
+nnoremap <leader>b :Denite buffer -buffer-name=buffer -mode=normal<CR>
 
-nnoremap <leader>f :Denite file -buffer-name=file -mode=normal -auto-preview -vertical-preview<CR>
-nnoremap <leader>fr :Denite file_rec -buffer-name=file_rec -mode=insert -auto-preview -vertical-preview<CR>
+nnoremap <leader>f :Denite file -buffer-name=file -mode=normal<CR>
+nnoremap <leader>fr :Denite file_rec -buffer-name=file_rec -mode=insert<CR>
 
-nnoremap <leader>l :Denite line -buffer-name=line -mode=insert -auto-preview -vertical-preview<CR>
+nnoremap <leader>l :Denite line -buffer-name=line -mode=insert<CR>
 
 nnoremap <leader>y :Denite neoyank -buffer-name=yankhistory -mode=normal<CR>
 nnoremap <leader>r :Denite register -buffer-name=register -mode=normal<CR>
