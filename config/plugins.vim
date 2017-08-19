@@ -4,14 +4,19 @@ set runtimepath+=~/.local/share/dein/repos/github.com/Shougo/dein.vim
 if dein#load_state('~/.local/share/dein')
   call dein#begin('~/.local/share/dein')
 
-  call dein#add('~/.local/share/dein/repos/github.com/Shougo/dein.vim')
+  call dein#add('Shougo/dein.vim')
+  call dein#add('Shougo/denite.nvim')
+  call dein#add('Shougo/neoyank.vim')
+  call dein#add('Shougo/junkfile.vim')
+
+  call dein#add('tpope/vim-fugitive')
+  call dein#add('tpope/vim-eunuch')
 
   call dein#add('chriskempson/vim-tomorrow-theme')
   call dein#add('scrooloose/syntastic')
   call dein#add('rust-lang/rust.vim')
   call dein#add('Raimondi/YAIFA')
   call dein#add('justinmk/vim-sneak')
-  call dein#add('tpope/vim-fugitive')
   call dein#add('sjl/gundo.vim')
 
   call dein#end()
@@ -21,4 +26,3 @@ endif
 if dein#check_install()
   call dein#install()
 endif
-
