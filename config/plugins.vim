@@ -14,6 +14,7 @@ if dein#load_state('~/.local/share/dein')
   call dein#add('tpope/vim-speeddating')
   call dein#add('tpope/vim-sensible')
 
+  call dein#add('Yggdroot/indentLine')
   call dein#add('tomtom/tcomment_vim')
   call dein#add('chriskempson/vim-tomorrow-theme')
   call dein#add('scrooloose/syntastic')

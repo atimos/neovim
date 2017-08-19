@@ -30,6 +30,8 @@ inoremap <esc> <NOP>
 
 cmap w!! w !sudo tee > /dev/null %
 
+nnoremap <leader>i :IndentLinesToggle<CR>
+
 nnoremap <leader>h :GundoToggle<CR>
 
 nnoremap <leader>b :Denite buffer -buffer-name=buffer -mode=normal -vertical-preview<CR>

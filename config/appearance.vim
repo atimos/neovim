@@ -10,3 +10,6 @@ set number
 set relativenumber
 set hidden
 set list
+
+let g:indentLine_char = '┆'
+let g:indentLine_enabled = 0
