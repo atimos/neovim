@@ -32,7 +32,7 @@ inoremap <esc> <NOP>
 nnoremap <leader>b :Denite buffer -buffer-name=buffer -mode=normal -vertical-preview<CR>
 
 nnoremap <leader>f :Denite file -buffer-name=file -mode=normal -vertical-preview<CR>
-nnoremap <leader>fr :Denite file_rec -buffer-name=file_rec -mode=insert -vertical-preview<CR>
+nnoremap <leader>ff :Denite file_rec -buffer-name=file_rec -mode=insert -vertical-preview<CR>
 nnoremap <leader>fg :Denite grep -buffer-name=file -mode=normal -vertical-preview<CR>
 
 nnoremap <leader>l :Denite line -buffer-name=line -mode=insert -vertical-preview<CR>
