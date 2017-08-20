@@ -9,10 +9,15 @@ if dein#load_state('~/.local/share/dein')
   call dein#add('Shougo/neoyank.vim')
   call dein#add('Shougo/junkfile.vim')
 
+  call dein#add('tpope/vim-rsi')
+  call dein#add('tpope/vim-obsession')
   call dein#add('tpope/vim-fugitive')
   call dein#add('tpope/vim-eunuch')
   call dein#add('tpope/vim-speeddating')
   call dein#add('tpope/vim-sensible')
+
+  call dein#add('vim-airline/vim-airline')
+  call dein#add('vim-airline/vim-airline-themes')
 
   call dein#add('Yggdroot/indentLine')
   call dein#add('tomtom/tcomment_vim')
