@@ -29,7 +29,7 @@ inoremap jj <Esc>
 inoremap <esc> <NOP>
 
 
-nnoremap <leader>w :Denite buffer -buffer-name=buffer -mode=normal -vertical-preview<CR>
+nnoremap <leader>w :Denite buffer -buffer-name=buffer -mode=insert -vertical-preview<CR>
 
 nnoremap <leader>f :Denite file -buffer-name=file -mode=normal -vertical-preview<CR>
 nnoremap <leader>ff :Denite file_rec -buffer-name=file_rec -mode=insert -vertical-preview<CR>
