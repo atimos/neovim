@@ -21,10 +21,10 @@ xmap T <Plug>Sneak_T
 omap t <Plug>Sneak_t
 omap T <Plug>Sneak_T
 
-noremap <C-J> <C-W>j<C-W>_
-noremap <C-K> <C-W>k<C-W>_
-noremap <C-L> <C-W>l
-noremap <C-H> <C-W>h
+noremap <C-S-J> <C-W>j<C-W>_
+noremap <C-S-K> <C-W>k<C-W>_
+noremap <C-S-L> <C-W>l
+noremap <C-S-H> <C-W>h
 inoremap jj <Esc>
 inoremap <esc> <NOP>
 
