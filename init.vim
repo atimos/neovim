@@ -4,7 +4,11 @@ endif
 
 set encoding=utf-8
 set hidden
+
 filetype plugin indent on
+set tabstop=4
+set shiftwidth=4
+set expandtab
 
 source $HOME/.config/nvim/config/plugins.vim
 source $HOME/.config/nvim/config/appearance.vim

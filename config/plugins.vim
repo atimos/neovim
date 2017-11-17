@@ -24,7 +24,6 @@ if dein#load_state('~/.local/share/dein')
   call dein#add('chriskempson/vim-tomorrow-theme')
   call dein#add('scrooloose/syntastic')
   call dein#add('rust-lang/rust.vim')
-  call dein#add('Raimondi/YAIFA')
   call dein#add('justinmk/vim-sneak')
   call dein#add('sjl/gundo.vim')
 
