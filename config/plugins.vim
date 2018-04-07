@@ -27,6 +27,11 @@ if dein#load_state('~/.local/share/dein')
   call dein#add('justinmk/vim-sneak')
   call dein#add('sjl/gundo.vim')
 
+  call dein#add('baverman/vial')
+  call dein#add('baverman/vial-http')
+
+  call dein#add('autozimu/LanguageClient-neovim')
+
   call dein#end()
   call dein#save_state()
 endif
