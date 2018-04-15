@@ -8,6 +8,7 @@ if dein#load_state('~/.local/share/dein')
   call dein#add('Shougo/denite.nvim')
   call dein#add('Shougo/neoyank.vim')
   call dein#add('Shougo/junkfile.vim')
+  call dein#add('Shougo/deoplete.nvim')
 
   call dein#add('tpope/vim-rsi')
   call dein#add('tpope/vim-obsession')
@@ -31,6 +32,7 @@ if dein#load_state('~/.local/share/dein')
   call dein#add('baverman/vial-http')
 
   call dein#add('autozimu/LanguageClient-neovim')
+  call dein#add('mhinz/vim-signify')
 
   call dein#end()
   call dein#save_state()

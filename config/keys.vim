@@ -48,3 +48,6 @@ nnoremap <leader>i :IndentLinesToggle<CR>
 
 
 nnoremap <leader>h :GundoToggle<CR>
+
+nmap <leader>gj <plug>(signify-next-hunk)
+nmap <leader>gk <plug>(signify-prev-hunk)

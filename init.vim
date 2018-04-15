@@ -14,4 +14,4 @@ source $HOME/.config/nvim/config/plugins.vim
 source $HOME/.config/nvim/config/appearance.vim
 source $HOME/.config/nvim/config/keys.vim
 source $HOME/.config/nvim/config/undo.vim
-source $HOME/.config/nvim/config/search.vim
+source $HOME/.config/nvim/config/enhancements.vim
