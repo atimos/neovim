@@ -15,3 +15,5 @@ source $HOME/.config/nvim/config/appearance.vim
 source $HOME/.config/nvim/config/keys.vim
 source $HOME/.config/nvim/config/undo.vim
 source $HOME/.config/nvim/config/enhancements.vim
+source $HOME/.config/nvim/config/languageClient/init.vim
+source $HOME/.config/nvim/config/languageClient/rust.vim
