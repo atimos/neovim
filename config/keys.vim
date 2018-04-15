@@ -41,7 +41,7 @@ nnoremap <leader>c :Denite command -buffer-name=command -mode=insert<CR>
 nnoremap <leader>ch :Denite command_history -buffer-name=command_history -mode=normal<CR>
 
 nnoremap <leader>j :Denite junkfile -buffer-name=junkfile -mode=normal<CR>
-nnoremap <leader>jn :Denite junkfile:new -buffer-name=junkfile -mode=normal<CR>
+nnoremap <leader>jn :Denite junkfile:new -buffer-name=junkfile -mode=insert<CR>
 
 
 nnoremap <leader>i :IndentLinesToggle<CR>
