@@ -34,6 +34,8 @@ if dein#load_state('~/.local/share/dein')
   call dein#add('autozimu/LanguageClient-neovim')
   call dein#add('mhinz/vim-signify')
 
+  call dein#add('lvht/phpcd.vim', {'build': 'composer install' })
+
   call dein#end()
   call dein#save_state()
 endif
