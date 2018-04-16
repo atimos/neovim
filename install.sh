@@ -8,4 +8,4 @@ cp -r $REPO/config $VIM_CONFIG/
 
 echo "curl https://raw.githubusercontent.com/Shougo/dein.vim/master/bin/installer.sh > installer.sh"
 echo "sh ./installer.sh ~/.local/share/dein/"
-echo "cd /home/timot/.local/share/dein/.cache/init.vim/.dein/; composer install # install php msgpack extension"
+echo "# install php msgpack extension"
