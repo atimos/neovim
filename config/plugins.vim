@@ -31,10 +31,10 @@ if dein#load_state('~/.local/share/dein')
   call dein#add('baverman/vial')
   call dein#add('baverman/vial-http')
 
-  call dein#add('autozimu/LanguageClient-neovim')
   call dein#add('mhinz/vim-signify')
 
   call dein#add('lvht/phpcd.vim', {'build': 'composer install' })
+  call dein#add('autozimu/LanguageClient-neovim', {'rev': 'next', 'build': 'bash install.sh'})
 
   call dein#end()
   call dein#save_state()
