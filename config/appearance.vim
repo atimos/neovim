@@ -27,3 +27,7 @@ let g:signify_sign_show_text = 0
 highlight DiffAdd ctermbg=22 ctermfg=none
 highlight DiffDelete ctermbg=88 ctermfg=none
 highlight DiffChange ctermbg=100 ctermfg=none
+
+let g:netrw_liststyle = 3
+let g:netrw_winsize = 25
+let g:netrw_browse_split = 4

@@ -11,6 +11,7 @@ if dein#load_state('~/.local/share/dein')
   call dein#add('Shougo/deoplete.nvim')
 
   call dein#add('tpope/vim-rsi')
+  call dein#add('tpope/vim-vinegar')
   call dein#add('tpope/vim-obsession')
   call dein#add('tpope/vim-fugitive')
   call dein#add('tpope/vim-eunuch')

@@ -28,6 +28,7 @@ noremap <C-S-H> <C-W>h
 inoremap jj <Esc>
 inoremap <esc> <NOP>
 
+noremap - :Vexplore<CR>
 
 nnoremap <leader>w :Denite buffer file -buffer-name=buffer_file -mode=normal -vertical-preview<CR>
 nnoremap <leader>f :Denite buffer file_rec -buffer-name=buffer_file_rec -mode=insert -vertical-preview<CR>
