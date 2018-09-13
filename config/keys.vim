@@ -30,13 +30,11 @@ inoremap <esc> <NOP>
 
 noremap - :Vexplore<CR>
 
-nnoremap <leader>w :Denite buffer file -buffer-name=buffer_file -mode=normal -vertical-preview<CR>
-nnoremap <leader>f :Denite buffer file_rec -buffer-name=buffer_file_rec -mode=insert -vertical-preview<CR>
-nnoremap <leader>fg :Denite grep -buffer-name=file -mode=normal -vertical-preview<CR>
+nnoremap <leader>e :Denite buffer file -buffer-name=buffer_file -mode=normal -vertical-preview<CR>
+nnoremap <leader>er :Denite buffer file_rec -buffer-name=buffer_file_rec -mode=insert -vertical-preview<CR>
+nnoremap <leader>eg :Denite grep -buffer-name=file -mode=normal -vertical-preview<CR>
+nnoremap <leader>el :Denite line -buffer-name=line -mode=insert -vertical-preview<CR>
 
-nnoremap <leader>l :Denite line -buffer-name=line -mode=insert -vertical-preview<CR>
-
-nnoremap <leader>y :Denite neoyank -buffer-name=yankhistory -mode=normal<CR>
 nnoremap <leader>r :Denite register -buffer-name=register -mode=normal<CR>
 nnoremap <leader>c :Denite command -buffer-name=command -mode=insert<CR>
 nnoremap <leader>ch :Denite command_history -buffer-name=command_history -mode=normal<CR>
@@ -44,9 +42,14 @@ nnoremap <leader>ch :Denite command_history -buffer-name=command_history -mode=n
 nnoremap <leader>j :Denite junkfile -buffer-name=junkfile -mode=normal<CR>
 nnoremap <leader>jn :Denite junkfile:new -buffer-name=junkfile -mode=insert<CR>
 
+nnoremap <leader>kh :call LanguageClient_textDocument_hover()<CR>
+nnoremap <leader>kd :call LanguageClient_textDocument_definition()<CR>
+
+nnoremap <leader>q :Bwipeout<CR>
+nnoremap <leader>wo :only<CR>
+nnoremap <leader>wq :close<CR>
 
 nnoremap <leader>i :IndentLinesToggle<CR>
-
 
 nnoremap <leader>h :GundoToggle<CR>
 

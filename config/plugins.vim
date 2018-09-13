@@ -36,8 +36,10 @@ if dein#load_state('~/.local/share/dein')
 
   call dein#add('irrationalistic/vim-tasks')
 
-  call dein#add('lvht/phpcd.vim', {'build': 'composer install' })
+  call dein#add('moll/vim-bbye')
+
   call dein#add('autozimu/LanguageClient-neovim', {'rev': 'next', 'build': 'bash install.sh'})
+  call dein#add('roxma/LanguageServer-php-neovim',  {'build': 'composer install && composer run-script parse-stubs'})
 
   call dein#end()
   call dein#save_state()
