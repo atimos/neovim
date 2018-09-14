@@ -30,10 +30,10 @@ inoremap <esc> <NOP>
 
 noremap - :Vexplore<CR>
 
-nnoremap <leader>ew :Denite buffer file -buffer-name=buffer_file -mode=normal -vertical-preview<CR>
-nnoremap <leader>eq :Denite buffer file_rec -buffer-name=buffer_file_rec -mode=insert -vertical-preview<CR>
-nnoremap <leader>er :Denite grep -buffer-name=file -mode=normal -vertical-preview<CR>
-nnoremap <leader>ed :Denite line -buffer-name=line -mode=insert -vertical-preview<CR>
+nnoremap <leader>ww :Denite buffer file -buffer-name=buffer_file -mode=normal -vertical-preview<CR>
+nnoremap <leader>wq :Denite buffer file_rec -buffer-name=buffer_file_rec -mode=insert -vertical-preview<CR>
+nnoremap <leader>we :Denite grep -buffer-name=file -mode=normal -vertical-preview<CR>
+nnoremap <leader>wr :Denite line -buffer-name=line -mode=insert -vertical-preview<CR>
 
 nnoremap <leader>r :Denite register -buffer-name=register -mode=normal<CR>
 nnoremap <leader>c :Denite command -buffer-name=command -mode=insert<CR>
@@ -45,9 +45,9 @@ nnoremap <leader>jn :Denite junkfile:new -buffer-name=junkfile -mode=insert<CR>
 nnoremap <leader>kh :call LanguageClient_textDocument_hover()<CR>
 nnoremap <leader>kd :call LanguageClient_textDocument_definition()<CR>
 
-nnoremap <leader>q :Bwipeout<CR>
-nnoremap <leader>we :only<CR>
-nnoremap <leader>wq :close<CR>
+nnoremap <leader>eq :Bwipeout<CR>
+nnoremap <leader>ee :only<CR>
+nnoremap <leader>ew :close<CR>
 
 nnoremap <leader>i :IndentLinesToggle<CR>
 
