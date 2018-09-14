@@ -30,10 +30,10 @@ inoremap <esc> <NOP>
 
 noremap - :Vexplore<CR>
 
-nnoremap <leader>ww :Denite buffer file -buffer-name=buffer_file -mode=normal -vertical-preview<CR>
-nnoremap <leader>wq :Denite buffer file_rec -buffer-name=buffer_file_rec -mode=insert -vertical-preview<CR>
+nnoremap <leader>ww :Denite buffer file -buffer-name=file -mode=normal -vertical-preview<CR>
+nnoremap <leader>wq :Denite file_rec -buffer-name=file -mode=insert -vertical-preview<CR>
 nnoremap <leader>we :Denite grep -buffer-name=file -mode=normal -vertical-preview<CR>
-nnoremap <leader>wr :Denite line -buffer-name=line -mode=insert -vertical-preview<CR>
+nnoremap <leader>wr :Denite line -buffer-name=file -mode=insert -vertical-preview<CR>
 
 nnoremap <leader>r :Denite register -buffer-name=register -mode=normal<CR>
 nnoremap <leader>c :Denite command -buffer-name=command -mode=insert<CR>
