@@ -7,19 +7,19 @@ xmap S cc
 omap s cl
 omap S cc
 
-nmap f <Plug>Sneak_s
-nmap F <Plug>Sneak_S
-xmap f <Plug>Sneak_s
-xmap F <Plug>Sneak_S
-omap f <Plug>Sneak_s
-omap F <Plug>Sneak_S
+nmap <leader>d <Plug>Sneak_s
+nmap <leader>D <Plug>Sneak_S
+xmap <leader>d <Plug>Sneak_s
+xmap <leader>D <Plug>Sneak_S
+omap <leader>d <Plug>Sneak_s
+omap <leader>D <Plug>Sneak_S
 
-nmap t <Plug>Sneak_t
-nmap T <Plug>Sneak_T
-xmap t <Plug>Sneak_t
-xmap T <Plug>Sneak_T
-omap t <Plug>Sneak_t
-omap T <Plug>Sneak_T
+nmap <leader>f <Plug>Sneak_t
+nmap <leader>F <Plug>Sneak_T
+xmap <leader>f <Plug>Sneak_t
+xmap <leader>F <Plug>Sneak_T
+omap <leader>f <Plug>Sneak_t
+omap <leader>F <Plug>Sneak_T
 
 noremap <C-S-J> <C-W>j<C-W>_
 noremap <C-S-K> <C-W>k<C-W>_
