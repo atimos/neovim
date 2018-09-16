@@ -5,6 +5,7 @@ set smartcase
 set splitbelow
 
 let g:sneak#streak = 1
+let g:sneak#label = 1
 
 let g:deoplete#enable_at_startup = 1
 

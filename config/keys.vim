@@ -7,19 +7,19 @@ xmap S cc
 omap s cl
 omap S cc
 
-nmap <leader>d <Plug>Sneak_s
-nmap <leader>D <Plug>Sneak_S
-xmap <leader>d <Plug>Sneak_s
-xmap <leader>D <Plug>Sneak_S
-omap <leader>d <Plug>Sneak_s
-omap <leader>D <Plug>Sneak_S
+nmap z <Plug>Sneak_s
+nmap Z <Plug>Sneak_S
+xmap z <Plug>Sneak_s
+xmap Z <Plug>Sneak_S
+omap z <Plug>Sneak_s
+omap Z <Plug>Sneak_S
 
-nmap <leader>f <Plug>Sneak_t
-nmap <leader>F <Plug>Sneak_T
-xmap <leader>f <Plug>Sneak_t
-xmap <leader>F <Plug>Sneak_T
-omap <leader>f <Plug>Sneak_t
-omap <leader>F <Plug>Sneak_T
+nmap x <Plug>Sneak_f
+nmap X <Plug>Sneak_F
+xmap x <Plug>Sneak_f
+xmap X <Plug>Sneak_F
+omap x <Plug>Sneak_f
+omap X <Plug>Sneak_F
 
 noremap <C-S-J> <C-W>j<C-W>_
 noremap <C-S-K> <C-W>k<C-W>_
@@ -28,7 +28,7 @@ noremap <C-S-H> <C-W>h
 inoremap jj <Esc>
 inoremap <esc> <NOP>
 
-noremap - :Vexplore<CR>
+noremap <leader>q :Vexplore<CR>
 
 nnoremap <leader>ew :Denite buffer file -buffer-name=file -mode=normal -vertical-preview<CR>
 nnoremap <leader>ee :Denite file_rec -buffer-name=file -mode=insert -vertical-preview<CR>
