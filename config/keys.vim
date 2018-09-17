@@ -14,12 +14,12 @@ xmap Z <Plug>Sneak_S
 omap z <Plug>Sneak_s
 omap Z <Plug>Sneak_S
 
-nmap x <Plug>Sneak_f
-nmap X <Plug>Sneak_F
-xmap x <Plug>Sneak_f
-xmap X <Plug>Sneak_F
-omap x <Plug>Sneak_f
-omap X <Plug>Sneak_F
+nmap f <Plug>Sneak_f
+nmap F <Plug>Sneak_F
+xmap f <Plug>Sneak_f
+xmap F <Plug>Sneak_F
+omap f <Plug>Sneak_f
+omap F <Plug>Sneak_F
 
 noremap <C-S-J> <C-W>j<C-W>_
 noremap <C-S-K> <C-W>k<C-W>_
