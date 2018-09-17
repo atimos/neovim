@@ -40,6 +40,8 @@ if dein#load_state('~/.local/share/dein')
   
   call dein#add('haya14busa/incsearch.vim')
 
+  call dein#add('noahfrederick/vim-composer')
+
   call dein#add('autozimu/LanguageClient-neovim', {'rev': 'next', 'build': 'bash install.sh'})
   call dein#add('roxma/LanguageServer-php-neovim',  {'build': 'composer install && composer run-script parse-stubs'})
 
