@@ -49,6 +49,7 @@ nnoremap <leader>ww :Bwipeout<CR>
 nnoremap <leader>we :only<CR>
 nnoremap <leader>wq :close<CR>
 
+nnoremap <leader>y :Denite neoyank -buffer-name=yankhistory -mode=normal<CR>
 nnoremap <leader>i :IndentLinesToggle<CR>
 
 nnoremap <leader>h :GundoToggle<CR>
