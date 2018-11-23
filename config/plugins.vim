@@ -16,6 +16,7 @@ if dein#load_state('~/.local/share/dein')
   call dein#add('tpope/vim-eunuch')
   call dein#add('tpope/vim-speeddating')
   call dein#add('tpope/vim-sensible')
+  call dein#add('tpope/vim-surround')
 
   call dein#add('vim-airline/vim-airline')
   call dein#add('vim-airline/vim-airline-themes')
