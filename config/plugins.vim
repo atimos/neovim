@@ -42,8 +42,16 @@ if dein#load_state('~/.local/share/dein')
 
   call dein#add('noahfrederick/vim-composer')
 
-  call dein#add('autozimu/LanguageClient-neovim', {'rev': 'next', 'build': 'bash install.sh'})
-  call dein#add('roxma/LanguageServer-php-neovim',  {'build': 'composer install && composer run-script parse-stubs'})
+  call dein#add('autozimu/LanguageClient-neovim', {
+              \ 'rev': 'next',
+              \ 'build': 'bash install.sh',
+              \ 'hook_post_update': 'bash install.sh'
+              \ })
+
+  call dein#add('roxma/LanguageServer-php-neovim',  {
+              \ 'build': 'composer install && composer run-script parse-stubs',
+              \ 'hook_post_update': 'composer install && composer run-script parse-stubs'
+              \ })
 
   call dein#end()
   call dein#save_state()
