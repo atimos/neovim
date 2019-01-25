@@ -26,6 +26,7 @@ noremap <C-S-K> <C-W>k<C-W>_
 noremap <C-S-L> <C-W>l
 noremap <C-S-H> <C-W>h
 inoremap jj <Esc>
+tnoremap jj <C-\><C-n>
 inoremap <esc> <NOP>
 
 noremap <leader>q :Vexplore<CR>
