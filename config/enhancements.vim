@@ -23,3 +23,6 @@ call denite#custom#var('grep', 'final_opts', [])
 
 "" Change recursive search to use ripgrep
 call denite#custom#var('file_rec', 'command', ['rg', '--files'])
+
+autocmd CompleteDone * silent! pclose!
+autocmd WinEnter * if &previewwindow | wincmd L | endif
