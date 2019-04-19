@@ -31,32 +31,32 @@ inoremap <esc> <NOP>
 
 noremap <leader>q :Vexplore<CR>
 
-nnoremap <leader>wq :Denite buffer file -buffer-name=file -mode=normal -vertical-preview<CR>
-nnoremap <leader>ww :Denite file_rec -buffer-name=file -mode=insert -vertical-preview<CR>
-nnoremap <leader>we :Denite grep -buffer-name=file -mode=normal -vertical-preview<CR>
-nnoremap <leader>wr :Denite line -buffer-name=file -mode=insert -vertical-preview<CR>
+nnoremap <leader>q :Denite buffer file -buffer-name=file -mode=normal -vertical-preview<CR>
+nnoremap <leader>w :Denite file/rec -buffer-name=file -mode=insert -vertical-preview<CR>
+nnoremap <leader>e :Denite grep -buffer-name=file -mode=normal -vertical-preview<CR>
+nnoremap <leader>r :Denite line -buffer-name=file -mode=insert -vertical-preview<CR>
 
-nnoremap <leader>r :Denite register -buffer-name=register -mode=normal<CR>
-nnoremap <leader>c :Denite command -buffer-name=command -mode=insert<CR>
-nnoremap <leader>ch :Denite command_history -buffer-name=command_history -mode=normal<CR>
+nnoremap <leader>a :call LanguageClient_textDocument_definition()<CR>
+nnoremap <leader>s :call LanguageClient_textDocument_hover()<CR>
+nnoremap <leader>d :call LanguageClient_contextMenu()<CR>
 
-nnoremap <leader>j :Denite junkfile -buffer-name=junkfile -mode=normal<CR>
-nnoremap <leader>jn :Denite junkfile:new -buffer-name=junkfile -mode=insert<CR>
+nnoremap <leader>y :Denite register -buffer-name=register -mode=normal<CR>
+nnoremap <leader>u :GundoToggle<CR>
+nnoremap <leader>i :Denite command_history -buffer-name=command_history -mode=normal<CR>
+nnoremap <leader>p :Denite neoyank -buffer-name=yankhistory -mode=normal<CR>
 
-nnoremap <leader>kh :call LanguageClient_textDocument_hover()<CR>
-nnoremap <leader>kd :call LanguageClient_textDocument_definition()<CR>
+nnoremap <leader>z :Bwipeout<CR>
+nnoremap <leader>x :only<CR>
+nnoremap <leader>c :close<CR>
 
-nnoremap <leader>qq :Bwipeout<CR>
-nnoremap <leader>qe :only<CR>
-nnoremap <leader>qw :close<CR>
+nnoremap <leader>, :Denite command -buffer-name=command -mode=insert<CR>
+nnoremap <leader>f :IndentLinesToggle<CR>
 
-nnoremap <leader>y :Denite neoyank -buffer-name=yankhistory -mode=normal<CR>
-nnoremap <leader>i :IndentLinesToggle<CR>
+nnoremap <leader>n :Denite junkfile -buffer-name=junkfile -mode=normal<CR>
+nnoremap <leader>m :Denite junkfile:new -buffer-name=junkfile -mode=insert<CR>
 
-nnoremap <leader>h :GundoToggle<CR>
-
-nmap <leader>gj <plug>(signify-next-hunk)
-nmap <leader>gk <plug>(signify-prev-hunk)
+nmap <leader>j <plug>(signify-next-hunk)
+nmap <leader>k <plug>(signify-prev-hunk)
 
 map /  <Plug>(incsearch-forward)
 map ?  <Plug>(incsearch-backward)
