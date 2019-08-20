@@ -30,29 +30,29 @@ tnoremap jj <C-\><C-n>
 
 noremap <leader>q :Vexplore<CR>
 
-nnoremap <leader>q :Denite buffer file -buffer-name=file -mode=normal -vertical-preview<CR>
-nnoremap <leader>w :Denite file/rec -buffer-name=file -mode=insert -vertical-preview<CR>
-nnoremap <leader>e :Denite grep -buffer-name=file -mode=normal -vertical-preview<CR>
-nnoremap <leader>r :Denite line -buffer-name=file -mode=insert -vertical-preview<CR>
+nnoremap <leader>q :Denite buffer file -buffer-name=file -vertical-preview<CR>
+nnoremap <leader>w :Denite file/rec -buffer-name=file -vertical-preview<CR>
+nnoremap <leader>e :Denite grep -buffer-name=file -vertical-preview<CR>
+nnoremap <leader>r :Denite line -buffer-name=file -vertical-preview<CR>
 
 nnoremap <leader>a :call LanguageClient_textDocument_definition()<CR>
 nnoremap <leader>s :call LanguageClient_textDocument_hover()<CR>
 nnoremap <leader>d :call LanguageClient_contextMenu()<CR>
 
-nnoremap <leader>y :Denite register -buffer-name=register -mode=normal<CR>
+nnoremap <leader>y :Denite register -buffer-name=register<CR>
 nnoremap <leader>u :GundoToggle<CR>
-nnoremap <leader>i :Denite command_history -buffer-name=command_history -mode=normal<CR>
-nnoremap <leader>p :Denite neoyank -buffer-name=yankhistory -mode=normal<CR>
+nnoremap <leader>i :Denite command_history -buffer-name=command_history<CR>
+nnoremap <leader>p :Denite neoyank -buffer-name=yankhistory<CR>
 
 nnoremap <leader>z :Bwipeout<CR>
 nnoremap <leader>x :only<CR>
 nnoremap <leader>c :close<CR>
 
-nnoremap <leader>, :Denite command -buffer-name=command -mode=insert<CR>
+nnoremap <leader>, :Denite command -buffer-name=command<CR>
 nnoremap <leader>f :IndentLinesToggle<CR>
 
-nnoremap <leader>n :Denite junkfile -buffer-name=junkfile -mode=normal<CR>
-nnoremap <leader>m :Denite junkfile:new -buffer-name=junkfile -mode=insert<CR>
+nnoremap <leader>n :Denite junkfile -buffer-name=junkfile<CR>
+nnoremap <leader>m :Denite junkfile:new -buffer-name=junkfile<CR>
 
 nmap <leader>j <plug>(signify-next-hunk)
 nmap <leader>k <plug>(signify-prev-hunk)
@@ -66,3 +66,20 @@ map *  <Plug>(incsearch-nohl-*)
 map #  <Plug>(incsearch-nohl-#)
 map g* <Plug>(incsearch-nohl-g*)
 map g# <Plug>(incsearch-nohl-g#)
+
+" Define mappings
+autocmd FileType denite call s:denite_my_settings()
+function! s:denite_my_settings() abort
+  nnoremap <silent><buffer><expr> <CR>
+  \ denite#do_map('do_action')
+  nnoremap <silent><buffer><expr> d
+  \ denite#do_map('do_action', 'delete')
+  nnoremap <silent><buffer><expr> p
+  \ denite#do_map('do_action', 'preview')
+  nnoremap <silent><buffer><expr> q
+  \ denite#do_map('quit')
+  nnoremap <silent><buffer><expr> i
+  \ denite#do_map('open_filter_buffer')
+  nnoremap <silent><buffer><expr> <Space>
+  \ denite#do_map('toggle_select').'j'
+endfunction
