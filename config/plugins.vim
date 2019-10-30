@@ -35,6 +35,7 @@ if dein#load_state('~/.local/share/dein')
   call dein#add('mhinz/vim-signify')
 
   call dein#add('irrationalistic/vim-tasks')
+  call dein#add('ron-rs/ron.vim')
 
   call dein#add('moll/vim-bbye')
   
