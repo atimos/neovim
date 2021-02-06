@@ -1,3 +1,8 @@
+let g:loaded_python_provider = 0
+let g:loaded_ruby_provider = 0
+let g:loaded_node_provider = 0
+
+
 if &compatible
   set nocompatible
 endif
@@ -15,5 +20,4 @@ source $HOME/.config/nvim/config/appearance.vim
 source $HOME/.config/nvim/config/keys.vim
 source $HOME/.config/nvim/config/undo.vim
 source $HOME/.config/nvim/config/enhancements.vim
-source $HOME/.config/nvim/config/languageClient/init.vim
-source $HOME/.config/nvim/config/languageClient/rust.vim
+source $HOME/.config/nvim/config/languageClient.vim

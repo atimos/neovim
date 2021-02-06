@@ -28,16 +28,17 @@ noremap <C-S-H> <C-W>h
 inoremap <C-q> <Esc>
 tnoremap jj <C-\><C-n>
 
-noremap <leader>q :Vexplore<CR>
 
 nnoremap <leader>q :Denite buffer file -buffer-name=file -vertical-preview<CR>
 nnoremap <leader>w :Denite file/rec -buffer-name=file -vertical-preview<CR>
 nnoremap <leader>e :Denite grep -buffer-name=file -vertical-preview<CR>
 nnoremap <leader>r :Denite line -buffer-name=file -vertical-preview<CR>
+nnoremap <leader>t :Vexplore<CR>
 
 nnoremap <leader>a :call LanguageClient_textDocument_definition()<CR>
-nnoremap <leader>s :call LanguageClient_textDocument_hover()<CR>
-nnoremap <leader>d :call LanguageClient_contextMenu()<CR>
+nnoremap <leader>s :call LanguageClient_contextMenu()<CR>
+nnoremap <leader>d :call LanguageClient_textDocument_hover()<CR>
+nnoremap <leader>f :call LanguageClient_textDocument_formatting()<CR>
 
 nnoremap <leader>y :Denite register -buffer-name=register<CR>
 nnoremap <leader>u :GundoToggle<CR>
@@ -49,7 +50,6 @@ nnoremap <leader>x :only<CR>
 nnoremap <leader>c :close<CR>
 
 nnoremap <leader>, :Denite command -buffer-name=command<CR>
-nnoremap <leader>f :IndentLinesToggle<CR>
 
 nnoremap <leader>n :Denite junkfile -buffer-name=junkfile<CR>
 nnoremap <leader>m :Denite junkfile:new -buffer-name=junkfile<CR>
