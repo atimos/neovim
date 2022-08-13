@@ -56,7 +56,6 @@ vim.g["airline#extensions#tabline#enabled"] = 1
 vim.g.signify_sign_show_text = 0
 vim.g.gundo_preview_bottom = 1
 
-
 vim.g.netrw_liststyle = 3
 vim.g.netrw_winsize = 25
 vim.g.netrw_browse_split = 4
@@ -68,6 +67,8 @@ vim.g["sneak#streak"] = 1
 vim.g["sneak#label"] = 1
 
 vim.cmd [[
+colorscheme base16-tomorrow-night
+
 nmap s cl
 nmap S cc
 xmap s c
