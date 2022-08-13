@@ -25,6 +25,8 @@ local on_attach = function(client, bufnr)
   vim.keymap.set('n', '<leader>s', vim.lsp.buf.code_action, bufopts)
   vim.keymap.set('n', 'gr', vim.lsp.buf.references, bufopts)
   vim.keymap.set('n', '<leader>f', vim.lsp.buf.formatting, bufopts)
+  vim.keymap.set('n', '<leader>j', vim.diagnostic.goto_next, bufopts)
+  vim.keymap.set('n', '<leader>k', vim.diagnostic.goto_prev, bufopts)
 end
 
 
@@ -100,6 +102,10 @@ nnoremap <leader>w :Files<CR>
 nnoremap <leader>q :Rg<CR>
 nnoremap <leader>e :Buffers<CR>
 nnoremap <leader>r :Lines<CR>
+
+nnoremap <leader>z :Bwipeout<CR>
+nnoremap <leader>x :only<CR>
+nnoremap <leader>c :close<CR>
 
 " map /  <Plug>(incsearch-forward)
 " map ?  <Plug>(incsearch-backward)
