@@ -106,6 +106,8 @@ nnoremap <leader>r :Lines<CR>
 nnoremap <leader>z :Bwipeout<CR>
 nnoremap <leader>x :only<CR>
 nnoremap <leader>c :close<CR>
+nnoremap <leader>h :bN<CR>
+nnoremap <leader>l :bn<CR>
 
 " map /  <Plug>(incsearch-forward)
 " map ?  <Plug>(incsearch-backward)
