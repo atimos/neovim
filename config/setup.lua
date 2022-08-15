@@ -51,6 +51,10 @@ vim.opt.guicursor = "n:blinkon1"
 vim.opt.ignorecase = true
 vim.opt.smartcase = true
 vim.opt.splitbelow = true
+vim.opt.history = 1000
+vim.opt.undofile = true
+vim.opt.undolevels = 1000
+vim.opt.undoreload = 0000
 
 vim.g.indentLine_char = '┆'
 vim.g.indentLine_enabled = 0
