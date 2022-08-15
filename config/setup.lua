@@ -98,9 +98,9 @@ noremap <C-S-L> <C-W>l
 noremap <C-S-H> <C-W>h
 inoremap <C-q> <Esc>
 
+nnoremap <leader>q :Buffers<CR>
 nnoremap <leader>w :Files<CR>
-nnoremap <leader>q :Rg<CR>
-nnoremap <leader>e :Buffers<CR>
+nnoremap <leader>e :Rg<CR>
 nnoremap <leader>r :Lines<CR>
 
 nnoremap <leader>z :Bwipeout<CR>
