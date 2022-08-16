@@ -106,7 +106,7 @@ nnoremap <leader>w :Files<CR>
 nnoremap <leader>e :Rg<CR>
 nnoremap <leader>r :Lines<CR>
 
-nnoremap <leader>z :Bwipeout<CR>
+nnoremap <leader>z :bwipeout<CR>
 nnoremap <leader>x :only<CR>
 nnoremap <leader>c :close<CR>
 nnoremap <leader>h :bN<CR>

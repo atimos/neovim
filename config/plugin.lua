@@ -18,6 +18,8 @@ return require('packer').startup(function(use)
     use 'junegunn/fzf'
     use 'tpope/vim-commentary'
     use 'haya14busa/is.vim'
+    use 'tpope/vim-sensible'
+    use 'tpope/vim-eunuch'
 
     if packer_bootstrap then
         require('packer').sync()
