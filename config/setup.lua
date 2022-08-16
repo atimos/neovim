@@ -66,7 +66,6 @@ vim.g.netrw_liststyle = 3
 vim.g.netrw_winsize = 25
 vim.g.netrw_browse_split = 4
 
-vim.g["incsearch#auto_nohlsearch"] = 1
 vim.g["signify_realtime"] = 1
 
 vim.g["sneak#streak"] = 1
@@ -112,14 +111,4 @@ nnoremap <leader>x :only<CR>
 nnoremap <leader>c :close<CR>
 nnoremap <leader>h :bN<CR>
 nnoremap <leader>l :bn<CR>
-
-" map /  <Plug>(incsearch-forward)
-" map ?  <Plug>(incsearch-backward)
-" map g/ <Plug>(incsearch-stay)
-" map n  <Plug>(incsearch-nohl-n)
-" map N  <Plug>(incsearch-nohl-N)
-" map *  <Plug>(incsearch-nohl-*)
-" map #  <Plug>(incsearch-nohl-#)
-" map g* <Plug>(incsearch-nohl-g*)
-" map g# <Plug>(incsearch-nohl-g#)
 ]]

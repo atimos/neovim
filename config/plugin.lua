@@ -16,6 +16,8 @@ return require('packer').startup(function(use)
     use 'mhinz/vim-signify'
     use 'junegunn/fzf.vim'
     use 'junegunn/fzf'
+    use 'tpope/vim-commentary'
+    use 'haya14busa/is.vim'
 
     if packer_bootstrap then
         require('packer').sync()
