@@ -10,7 +10,6 @@ return require('packer').startup(function(use)
     use 'tpope/vim-fugitive'
     use 'vim-airline/vim-airline'
     use 'vim-airline/vim-airline-themes'
-    use 'chriskempson/base16-vim'
     use 'rust-lang/rust.vim'
     use 'justinmk/vim-sneak'
     use 'mhinz/vim-signify'
@@ -20,6 +19,7 @@ return require('packer').startup(function(use)
     use 'haya14busa/is.vim'
     use 'tpope/vim-sensible'
     use 'tpope/vim-eunuch'
+    use 'chriskempson/vim-tomorrow-theme'
 
     if packer_bootstrap then
         require('packer').sync()

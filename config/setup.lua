@@ -40,7 +40,7 @@ require('lspconfig')['rust_analyzer'].setup{
 }
 
 vim.opt.wrap = false
-vim.opt.termguicolors = true
+vim.opt.termguicolors = false
 vim.opt.hlsearch = true
 vim.opt.number = true
 vim.opt.relativenumber = true
@@ -72,7 +72,7 @@ vim.g["sneak#streak"] = 1
 vim.g["sneak#label"] = 1
 
 vim.cmd [[
-colorscheme base16-tomorrow-night
+colorscheme Tomorrow-Night
 
 nmap s cl
 nmap S cc
